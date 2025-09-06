@@ -67,6 +67,28 @@ export default function Banner() {
 
         </div>
       </div>
+       
+      {/* Scroll indicator */}
+      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
+        <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl px-8 py-6 border border-gray-700">
+          <p className="text-gray-300 text-base mb-3">Scroll to see some of my projects</p>
+          <div className="flex justify-center">
+            <svg 
+              className="w-7 h-7 text-gray-400 animate-bounce" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M19 14l-7 7m0 0l-7-7m7 7V3" 
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
