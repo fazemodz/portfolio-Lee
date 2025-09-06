@@ -5,6 +5,9 @@ import Navbar from"./components/navbar";
 export const metadata: Metadata = {
   title: "Lee's portfolio",
   description: "Lee's portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
