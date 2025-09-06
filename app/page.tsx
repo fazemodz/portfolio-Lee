@@ -13,15 +13,15 @@ interface Project {
 }
 
 export default function Home() {
-  const [softwareProjects, setSoftwareProjects] = useState<Project[]>([])
-  const [webProjects, setWebProjects] = useState<Project[]>([])
+  // const [softwareProjects, setSoftwareProjects] = useState<Project[]>([])
+  // const [webProjects, setWebProjects] = useState<Project[]>([])
   const [gameProjects, setGameProjects] = useState<Project[]>([])
   useEffect(() => {
     fetch('https://f6o4iklysym30j8d.public.blob.vercel-storage.com/Portfolio/Data/projects.json')
       .then((response) => response.json())
       .then((data) => {
-        setSoftwareProjects(data.softwareProjects)
-        setWebProjects(data.webProjects)
+        // setSoftwareProjects(data.softwareProjects)
+        // setWebProjects(data.webProjects)
         setGameProjects(data.gameProjects)
       })
       .catch((error) => {
