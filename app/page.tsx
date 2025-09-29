@@ -13,15 +13,15 @@ interface Project {
 }
 
 export default function Home() {
-  const [softwareProjects, setSoftwareProjects] = useState<Project[]>([])
-  const [webProjects, setWebProjects] = useState<Project[]>([])
+  // const [softwareProjects, setSoftwareProjects] = useState<Project[]>([])
+  // const [webProjects, setWebProjects] = useState<Project[]>([])
   const [gameProjects, setGameProjects] = useState<Project[]>([])
   useEffect(() => {
     fetch('https://f6o4iklysym30j8d.public.blob.vercel-storage.com/Portfolio/Data/projects.json')
       .then((response) => response.json())
       .then((data) => {
-        setSoftwareProjects(data.softwareProjects)
-        setWebProjects(data.webProjects)
+        // setSoftwareProjects(data.softwareProjects)
+        // setWebProjects(data.webProjects)
         setGameProjects(data.gameProjects)
       })
       .catch((error) => {
@@ -33,7 +33,7 @@ export default function Home() {
     <>
       <Banner />
 
-      {/* Software Projects */}
+      {/* Software Projects 
       <section
         id="software"
         className="bg-gray-900 w-full overflow-hidden px-4 py-16 sm:px-6 lg:px-8"
@@ -53,9 +53,9 @@ export default function Home() {
             />
           ))}
         </div>
-      </section>
+      </section>*/}
 
-      {/* Web Projects */}
+      {/* Web Projects
       <section
         id="web"
         className="bg-gray-900 w-full overflow-hidden px-4 py-8 sm:px-6 lg:px-8"
@@ -75,7 +75,7 @@ export default function Home() {
             />
           ))}
         </div>
-      </section>
+      </section> */}
       {/* Game Projects */}
       <section
         id="game"
